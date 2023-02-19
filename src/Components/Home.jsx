@@ -13,33 +13,30 @@ const Home = () => {
         console.log("Hover running");
         // element.stopPropogation()
         // console.log(element.target.children[0].src)
-        if (element.target.children[0].alt===('linkedin')&&element.target.className===('hover')) {
-            element.target.className=('shadow')
+        if (element.target.children[0].alt===('linkedin')&&element.target.className===('')) {
+            element.target.className=('shadow hover')
             element.target.children[0].src = `${linkedinH}`
             // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-        }else if (element.target.children[0].alt===('linkedin')&&element.target.className===('shadow')){
+        }else if (element.target.children[0].alt===('linkedin')&&element.target.className===('shadow hover')){
             // console.log(element.target.children[0].src)
-            element.target.className=('hover')
+            element.target.className=('')
             element.target.children[0].src = `${linkedin}`
-
-        }else if (element.target.children[0].alt===('github')&&element.target.className===('hover')) {
-            element.target.className=('shadow')
+        }else if (element.target.children[0].alt===('github')&&element.target.className===('')) {
+            element.target.className=('shadow hover')
             element.target.children[0].src = `${githubH}`
             // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-        }else if (element.target.children[0].alt===('github')&&element.target.className===('shadow')){
+        }else if (element.target.children[0].alt===('github')&&element.target.className===('shadow hover')){
             // console.log(element.target.children[0].src)
-            element.target.className=('hover')
+            element.target.className=('')
             element.target.children[0].src = `${github}`
-
-        }else if (element.target.children[0].alt===('file')&&element.target.className===('hover')) {
-            element.target.className=('shadow')
+        }else if (element.target.children[0].alt===('file')&&element.target.className===('')) {
+            element.target.className=('shadow hover')
             element.target.children[0].src = `${fileH}`
             // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-        }else if (element.target.children[0].alt===('file')&&element.target.className===('shadow')){
+        }else if (element.target.children[0].alt===('file')&&element.target.className===('shadow hover')){
             // console.log(element.target.children[0].src)
-            element.target.className=('hover')
+            element.target.className=('')
             element.target.children[0].src = `${file}`
-
         }
     }
     return (
@@ -52,9 +49,9 @@ const Home = () => {
             <div id="introTwo">
                 <br/><h2>Hello, I am Tyler and I am a full-stack web developer</h2><br/>
                 <div id="icons">
-                    <a className="hover" onMouseEnter={hover} onMouseLeave={hover} href="https://www.linkedin.com/in/tyler-wertman/" target="_blank" rel="noreferrer"><img class="hover" src={linkedin} alt="linkedin"/></a>
-                    <a className="hover" onMouseEnter={hover} onMouseLeave={hover} href="https://github.com/tylerwertman" target="_blank" rel="noreferrer"><img class="hover" src={github} alt="github"/></a>
-                    <a className="hover" onMouseEnter={hover} onMouseLeave={hover} href="./resume.pdf" target="_blank" download="Tyler Wertman Resume"><img class="hover" src={file} alt="file"/></a>
+                    <a className="" onMouseOver={hover} onMouseOut={hover} href="https://www.linkedin.com/in/tyler-wertman/" target="_blank" rel="noreferrer"><img class="" src={linkedin} alt="linkedin"/></a>
+                    <a className="" onMouseOver={hover} onMouseOut={hover} href="https://github.com/tylerwertman" target="_blank" rel="noreferrer"><img class="" src={github} alt="github"/></a>
+                    <a className="" onMouseOver={hover} onMouseOut={hover} href="./resume.pdf" target="_blank" download="Tyler Wertman Resume"><img class="" src={file} alt="file"/></a>
                     {/* <a href="#" target="_blank"><img src="./images/Medium-fill-DSG.svg" alt="Medium"/></a> */}
                     {/* <a href="https://www.etsy.com/shop/TylersTechSpace" target="_blank"><img src="./images/Etsy-fill-DSG.svg" alt="Etsy"/></a> */}
                     {/* <a href="https://www.youtube.com/@synergystyles" target="_blank"><img src="./images/Youtube-fill-DSG.svg" alt="Youtube"/></a> */}

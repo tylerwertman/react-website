@@ -20,18 +20,18 @@ const Projects = () => {
                         <div class="gameboyCtrl">
                             <div class="dpad">
                                 <div class="sqBtn"></div>
-                                <div class="sqBtn activeBtn" onclick="shinyPoke()">^</div>
+                                <div class="sqBtn activeBtn" onClick="shinyPoke()">^</div>
                                 <div class="sqBtn"></div>
-                                <div class="sqBtn activeBtn" onclick="frontPoke()">&lt;</div>
+                                <div class="sqBtn activeBtn" onClick="frontPoke()">&lt;</div>
                                 <div class="sqBtn dot">•</div>
-                                <div class="sqBtn activeBtn" onclick="backPoke()">&gt;</div>
+                                <div class="sqBtn activeBtn" onClick="backPoke()">&gt;</div>
                                 <div class="sqBtn"></div>
-                                <div class="sqBtn activeBtn" onclick="defaultPoke()">v</div>
+                                <div class="sqBtn activeBtn" onClick="defaultPoke()">v</div>
                                 <div class="sqBtn"></div>
                             </div>
                             <div class="AB">
-                                <div class="cirBtn" onclick="newPoke()">B</div>
-                                <div class="cirBtn A" onclick="revealPoke()">A</div>
+                                <div class="cirBtn" onClick="newPoke()">B</div>
+                                <div class="cirBtn A" onClick="revealPoke()">A</div>
                             </div>
                         </div>
                         <div class="ss">
