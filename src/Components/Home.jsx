@@ -14,28 +14,28 @@ const Home = () => {
         // element.stopPropogation()
         // console.log(element.target.children[0].src)
         if (element.target.children[0].alt===('linkedin')&&element.target.className===('hover')) {
-            element.target.className=('')
+            element.target.className=('shadow')
             element.target.children[0].src = `${linkedinH}`
             // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-        }else if (element.target.children[0].alt===('linkedin')&&element.target.className===('')){
+        }else if (element.target.children[0].alt===('linkedin')&&element.target.className===('shadow')){
             // console.log(element.target.children[0].src)
             element.target.className=('hover')
             element.target.children[0].src = `${linkedin}`
 
         }else if (element.target.children[0].alt===('github')&&element.target.className===('hover')) {
-            element.target.className=('')
+            element.target.className=('shadow')
             element.target.children[0].src = `${githubH}`
             // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-        }else if (element.target.children[0].alt===('github')&&element.target.className===('')){
+        }else if (element.target.children[0].alt===('github')&&element.target.className===('shadow')){
             // console.log(element.target.children[0].src)
             element.target.className=('hover')
             element.target.children[0].src = `${github}`
 
         }else if (element.target.children[0].alt===('file')&&element.target.className===('hover')) {
-            element.target.className=('')
+            element.target.className=('shadow')
             element.target.children[0].src = `${fileH}`
             // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-        }else if (element.target.children[0].alt===('file')&&element.target.className===('')){
+        }else if (element.target.children[0].alt===('file')&&element.target.className===('shadow')){
             // console.log(element.target.children[0].src)
             element.target.className=('hover')
             element.target.children[0].src = `${file}`
