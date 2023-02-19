@@ -138,7 +138,7 @@ main {
   align-items: center;
   flex-direction: column;
 }
-#introZero {                                        
+#home {                                        
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -437,7 +437,7 @@ footer img {
 /* Media Queries */
 
 @media screen and (width > 899px) {
-  #introZero {
+  #home {
       flex-direction: row;
       width: 560px;
   }
@@ -481,7 +481,7 @@ footer img {
   }
 }
 @media screen and (width > 1919px) {
-  #introZero {
+  #home {
       flex-direction: row;
       width: 1120px;
   }
@@ -511,7 +511,7 @@ footer img {
   #navLinksL a img {
       height: 150%;
   }
-  #introZero {
+  #home {
       width: 1120px;
       margin-top: 100px;
   }
@@ -555,7 +555,7 @@ footer img {
       padding: 18px 0;
       font-size: 20px;
   }
-  #introZero {
+  #home {
       flex-direction: column;
       width: 265px;
   }

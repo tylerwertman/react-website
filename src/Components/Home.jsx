@@ -40,7 +40,7 @@ const Home = () => {
         }
     }
     return (
-        <div class="section" id="introZero">
+        <div class="section" id="home">
             <div id="introOne">
                 <img src={me} alt="tyler, website owner"/>
                 <h2>Tyler Wertman</h2><br/>

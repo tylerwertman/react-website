@@ -12,75 +12,75 @@ import contactH from './images/Contact-LG.svg'
 
 const nav = () => {
 
-  const hover = (element) => {
+  const hover = (e) => {
     console.log("Hover running");
-    console.log(element.target.children[1])
-    // element.stopPropogation()
-    if (element.target.children[0].alt===('home')&&element.target.className===('hover')) {
-        element.target.className=('shadow')
-        element.target.children[0].src = `${homeH}`
-        element.target.children[1].style.color="lightgrey"
-        element.target.style.backgroundColor="seagreen"
-        // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-    }else if (element.target.children[0].alt===('home')&&element.target.className===('shadow')){
-        // console.log(element.target.children[0].src)
-        element.target.className=('hover')
-        element.target.children[0].src = `${home}`
-      element.target.children[1].style.color="darkslategrey"
-        element.target.style.backgroundColor=""
-    }else if (element.target.children[0].alt===('about')&&element.target.className===('hover')) {
-        element.target.className=('shadow')
-        element.target.children[0].src = `${aboutH}`
-        element.target.children[1].style.color="lightgrey"
-        element.target.style.backgroundColor="seagreen"
-        // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-    }else if (element.target.children[0].alt===('about')&&element.target.className===('shadow')){
-        // console.log(element.target.children[0].src)
-        element.target.className=('hover')
-        element.target.children[0].src = `${about}`
-      element.target.children[1].style.color="lightgrey"
-        element.target.style.backgroundColor=""
-    }else if (element.target.children[0].alt===('projects')&&element.target.className===('hover')) {
-        element.target.className=('')
-        element.target.children[0].src = `${projectsH}`
-        element.target.children[1].style.color="lightgrey"
-        element.target.style.backgroundColor="seagreen"
-        // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-    }else if (element.target.children[0].alt===('projects')&&element.target.className===('')){
-        // console.log(element.target.children[0].src)
-        element.target.className=('hover')
-        element.target.children[0].src = `${projects}`
-      element.target.children[1].style.color="lightgrey"
-        element.target.style.backgroundColor=""
-    }else if (element.target.children[0].alt===('education')&&element.target.className===('hover')) {
-      element.target.className=('')
-      element.target.children[0].src = `${educationH}`
-      element.target.children[1].style.color="lightgrey"
-      element.target.style.backgroundColor="seagreen"
-      // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-    }else if (element.target.children[0].alt===('education')&&element.target.className===('')){
-        // console.log(element.target.children[0].src)
-        element.target.className=('hover')
-        element.target.children[0].src = `${education}`
-      element.target.children[1].style.color="lightgrey"
-        element.target.style.backgroundColor=""
-    }else if (element.target.children[0].alt===('contact')&&element.target.className===('hover')) {
-      element.target.className=('')
-      element.target.children[0].src = `${contactH}`
-      element.target.children[1].style.color="lightgrey"
-      element.target.style.backgroundColor="seagreen"
-      // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-    }else if (element.target.children[0].alt===('contact')&&element.target.className===('')){
-        // console.log(element.target.children[0].src)
-        element.target.className=('hover')
-        element.target.children[0].src = `${contact}`
-      element.target.children[1].style.color="lightgrey"
-        element.target.style.backgroundColor=""
+    console.log(e.target.children[1])
+    // e.stopPropogation();
+    if (e.target.children[0].alt===('home')&&e.target.className===('hover')) {
+      e.target.className=('shadow')
+      e.target.children[0].src = `${homeH}`
+      e.target.children[1].style.color="lightgrey"
+      e.target.style.backgroundColor="seagreen"
+      // e.target.children[0].src = "{{e.target.children[0].alt}+H}"
+    }else if (e.target.children[0].alt===('home')&&e.target.className===('shadow')){
+      // console.log(e.target.children[0].src)
+      e.target.className=('hover')
+      e.target.children[0].src = `${home}`
+      e.target.children[1].style.color="darkslategrey"
+      e.target.style.backgroundColor=""
+    }else if (e.target.children[0].alt===('about')&&e.target.className===('hover')) {
+      e.target.className=('shadow')
+      e.target.children[0].src = `${aboutH}`
+      e.target.children[1].style.color="lightgrey"
+      e.target.style.backgroundColor="seagreen"
+      // e.target.children[0].src = "{{e.target.children[0].alt}+H}"
+    }else if (e.target.children[0].alt===('about')&&e.target.className===('shadow')){
+      // console.log(e.target.children[0].src)
+      e.target.className=('hover')
+      e.target.children[0].src = `${about}`
+      e.target.children[1].style.color="lightgrey"
+      e.target.style.backgroundColor=""
+    }else if (e.target.children[0].alt===('projects')&&e.target.className===('hover')) {
+      e.target.className=('')
+      e.target.children[0].src = `${projectsH}`
+      e.target.children[1].style.color="lightgrey"
+      e.target.style.backgroundColor="seagreen"
+      // e.target.children[0].src = "{{e.target.children[0].alt}+H}"
+    }else if (e.target.children[0].alt===('projects')&&e.target.className===('')){
+      // console.log(e.target.children[0].src)
+      e.target.className=('hover')
+      e.target.children[0].src = `${projects}`
+      e.target.children[1].style.color="lightgrey"
+      e.target.style.backgroundColor=""
+    }else if (e.target.children[0].alt===('education')&&e.target.className===('hover')) {
+      e.target.className=('')
+      e.target.children[0].src = `${educationH}`
+      e.target.children[1].style.color="lightgrey"
+      e.target.style.backgroundColor="seagreen"
+      // e.target.children[0].src = "{{e.target.children[0].alt}+H}"
+    }else if (e.target.children[0].alt===('education')&&e.target.className===('')){
+      // console.log(e.target.children[0].src)
+      e.target.className=('hover')
+      e.target.children[0].src = `${education}`
+      e.target.children[1].style.color="lightgrey"
+      e.target.style.backgroundColor=""
+    }else if (e.target.children[0].alt===('contact')&&e.target.className===('hover')) {
+      e.target.className=('')
+      e.target.children[0].src = `${contactH}`
+      e.target.children[1].style.color="lightgrey"
+      e.target.style.backgroundColor="seagreen"
+      // e.target.children[0].src = "{{e.target.children[0].alt}+H}"
+    }else if (e.target.children[0].alt===('contact')&&e.target.className===('')){
+      // console.log(e.target.children[0].src)
+      e.target.className=('hover')
+      e.target.children[0].src = `${contact}`
+      e.target.children[1].style.color="lightgrey"
+      e.target.style.backgroundColor=""
     }
   }
   return (
     <nav>
-        <h1><a href="#null">Tyler Wertman Developments</a></h1>
+        <h1><a href="#home">Tyler Wertman Developments</a></h1>
             <div id="navLinksL">
               <img src="" alt="" />
                 <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#home"><img src={home} alt="home"/><span class="hidden">&nbsp;Home</span></a>&nbsp;
