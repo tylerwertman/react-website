@@ -9,34 +9,35 @@ import fileH from './images/File-fill-SG.svg'
 
 const Home = () => {
 
-    const hover = (element) => {
+    const hover = (e) => {
         console.log("Hover running");
-        // element.stopPropogation()
-        // console.log(element.target.children[0].src)
-        if (element.target.children[0].alt===('linkedin')&&element.target.className===('')) {
-            element.target.className=('shadow hover')
-            element.target.children[0].src = `${linkedinH}`
-            // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-        }else if (element.target.children[0].alt===('linkedin')&&element.target.className===('shadow hover')){
-            // console.log(element.target.children[0].src)
-            element.target.className=('')
-            element.target.children[0].src = `${linkedin}`
-        }else if (element.target.children[0].alt===('github')&&element.target.className===('')) {
-            element.target.className=('shadow hover')
-            element.target.children[0].src = `${githubH}`
-            // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-        }else if (element.target.children[0].alt===('github')&&element.target.className===('shadow hover')){
-            // console.log(element.target.children[0].src)
-            element.target.className=('')
-            element.target.children[0].src = `${github}`
-        }else if (element.target.children[0].alt===('file')&&element.target.className===('')) {
-            element.target.className=('shadow hover')
-            element.target.children[0].src = `${fileH}`
-            // element.target.children[0].src = "{{element.target.children[0].alt}+H}"
-        }else if (element.target.children[0].alt===('file')&&element.target.className===('shadow hover')){
-            // console.log(element.target.children[0].src)
-            element.target.className=('')
-            element.target.children[0].src = `${file}`
+        console.log(e.target)
+        // e.stopPropogation()
+        const img = e.target
+        if (img.alt===('linkedin')&&img.className===('')) {
+            img.className=('shadow hover')
+            img.src = `${linkedinH}`
+            // img.src = "{{img.alt}+H}"
+        }else if (img.alt===('linkedin')&&img.className===('shadow hover')){
+            // console.log(img.src)
+            img.className=('')
+            img.src = `${linkedin}`
+        }else if (img.alt===('github')&&img.className===('')) {
+            img.className=('shadow hover')
+            img.src = `${githubH}`
+            // img.src = "{{img.alt}+H}"
+        }else if (img.alt===('github')&&img.className===('shadow hover')){
+            // console.log(img.src)
+            img.className=('')
+            img.src = `${github}`
+        }else if (img.alt===('file')&&img.className===('')) {
+            img.className=('shadow hover')
+            img.src = `${fileH}`
+            // img.src = "{{img.alt}+H}"
+        }else if (img.alt===('file')&&img.className===('shadow hover')){
+            // console.log(img.src)
+            img.className=('')
+            img.src = `${file}`
         }
     }
     return (
@@ -49,9 +50,9 @@ const Home = () => {
             <div id="introTwo">
                 <br/><h2>Hello, I am Tyler and I am a full-stack web developer</h2><br/>
                 <div id="icons">
-                    <a className="" onMouseOver={hover} onMouseOut={hover} href="https://www.linkedin.com/in/tyler-wertman/" target="_blank" rel="noreferrer"><img class="" src={linkedin} alt="linkedin"/></a>
-                    <a className="" onMouseOver={hover} onMouseOut={hover} href="https://github.com/tylerwertman" target="_blank" rel="noreferrer"><img class="" src={github} alt="github"/></a>
-                    <a className="" onMouseOver={hover} onMouseOut={hover} href="./resume.pdf" target="_blank" download="Tyler Wertman Resume"><img class="" src={file} alt="file"/></a>
+                    <a href="https://www.linkedin.com/in/tyler-wertman/" target="_blank" rel="noreferrer"><img className="" onMouseOver={hover} onMouseOut={hover} src={linkedin} alt="linkedin"/></a>
+                    <a href="https://github.com/tylerwertman" target="_blank" rel="noreferrer"><img className="" onMouseOver={hover} onMouseOut={hover} src={github} alt="github"/></a>
+                    <a href="./resume.pdf" target="_blank" download="Tyler Wertman Resume"><img className="" onMouseOver={hover} onMouseOut={hover} src={file} alt="file"/></a>
                     {/* <a href="#" target="_blank"><img src="./images/Medium-fill-DSG.svg" alt="Medium"/></a> */}
                     {/* <a href="https://www.etsy.com/shop/TylersTechSpace" target="_blank"><img src="./images/Etsy-fill-DSG.svg" alt="Etsy"/></a> */}
                     {/* <a href="https://www.youtube.com/@synergystyles" target="_blank"><img src="./images/Youtube-fill-DSG.svg" alt="Youtube"/></a> */}
