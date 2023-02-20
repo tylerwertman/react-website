@@ -14,61 +14,27 @@ const nav = () => {
 
   const hover = (e) => {
     console.log("Hover running");
-    console.log(e.target.children[1])
     const img = e.target.children[0]
     const span = e.target.children[1]
+    const text = e.target.children[1].outerText
+    const imgN = ["home", "about", "projects", "education", "contact"]
+    const imgH = [homeH, aboutH, projectsH, educationH, contactH]
+    const imgNH = [home, about, projects, education, contact]
+    console.log(text)
     // e.stopPropogation();
-    if (img.alt===('home')&&e.target.className===('hover')) {
-      e.target.className=('shadow')
-      img.src = `${homeH}`
-      span.style.color="lightgrey"
-      e.target.style.backgroundColor="seagreen"
-      // img.src = "{{img.alt}+H}"
-    }else if (img.alt===('home')&&e.target.className===('shadow')){
-      e.target.className=('hover')
-      img.src = `${home}`
-      span.style.color="darkslategrey"
-      e.target.style.backgroundColor=""
-    }else if (img.alt===('about')&&e.target.className===('hover')) {
-      e.target.className=('shadow')
-      img.src = `${aboutH}`
-      span.style.color="lightgrey"
-      e.target.style.backgroundColor="seagreen"
-    }else if (img.alt===('about')&&e.target.className===('shadow')){
-      e.target.className=('hover')
-      img.src = `${about}`
-      span.style.color="darkslategrey"
-      e.target.style.backgroundColor=""
-    }else if (img.alt===('projects')&&e.target.className===('hover')) {
-      e.target.className=('shadow')
-      img.src = `${projectsH}`
-      span.style.color="lightgrey"
-      e.target.style.backgroundColor="seagreen"
-    }else if (img.alt===('projects')&&e.target.className===('shadow')){
-      e.target.className=('hover')
-      img.src = `${projects}`
-      span.style.color="darkslategrey"
-      e.target.style.backgroundColor=""
-    }else if (img.alt===('education')&&e.target.className===('hover')) {
-      e.target.className=('shadow')
-      img.src = `${educationH}`
-      span.style.color="lightgrey"
-      e.target.style.backgroundColor="seagreen"
-    }else if (img.alt===('education')&&e.target.className===('shadow')){
-      e.target.className=('hover')
-      img.src = `${education}`
-      span.style.color="darkslategrey"
-      e.target.style.backgroundColor=""
-    }else if (img.alt===('contact')&&e.target.className===('hover')) {
-      e.target.className=('shadow')
-      img.src = `${contactH}`
-      span.style.color="lightgrey"
-      e.target.style.backgroundColor="seagreen"
-    }else if (img.alt===('contact')&&e.target.className===('shadow')){
-      e.target.className=('hover')
-      img.src = `${contact}`
-      span.style.color="darkslategrey"
-      e.target.style.backgroundColor=""
+    for (let i=0; i<5; i++){
+      if (img.alt===(imgN[i])&&e.target.className===('hover')) {
+        e.target.className=('shadow')
+        img.src = `${imgH[i]}`
+        span.style.color="lightgrey"
+        e.target.style.backgroundColor="seagreen"
+        // img.src = "{{img.alt}+H}"
+      }else if (img.alt===(imgN[i])&&e.target.className===('shadow')){
+        e.target.className=('hover')
+        img.src = `${imgNH[i]}`
+        span.style.color="darkslategrey"
+        e.target.style.backgroundColor=""
+      }
     }
   }
   return (
