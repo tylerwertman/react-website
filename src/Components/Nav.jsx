@@ -14,24 +14,23 @@ const nav = () => {
 
   const hover = (e) => {
     console.log("Hover running");
-    const img = e.target.children[0]
+    const imgTag = e.target.children[0]
     const span = e.target.children[1]
     const text = e.target.children[1].outerText
-    const imgN = ["home", "about", "projects", "education", "contact"]
-    const imgH = [homeH, aboutH, projectsH, educationH, contactH]
-    const imgNH = [home, about, projects, education, contact]
+    const imgName = ["home", "about", "projects", "education", "contact"]
+    const imgHover = [homeH, aboutH, projectsH, educationH, contactH]
+    const img = [home, about, projects, education, contact]
     console.log(text)
     // e.stopPropogation();
     for (let i=0; i<5; i++){
-      if (img.alt===(imgN[i])&&e.target.className===('hover')) {
+      if (imgTag.alt===(imgName[i])&&e.target.className===('hover')) {
         e.target.className=('shadow')
-        img.src = `${imgH[i]}`
+        imgTag.src = `${imgHover[i]}`
         span.style.color="lightgrey"
         e.target.style.backgroundColor="seagreen"
-        // img.src = "{{img.alt}+H}"
-      }else if (img.alt===(imgN[i])&&e.target.className===('shadow')){
+      }else if (imgTag.alt===(imgName[i])&&e.target.className===('shadow')){
         e.target.className=('hover')
-        img.src = `${imgNH[i]}`
+        imgTag.src = `${img[i]}`
         span.style.color="darkslategrey"
         e.target.style.backgroundColor=""
       }
