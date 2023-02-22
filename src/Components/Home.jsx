@@ -13,31 +13,19 @@ const Home = () => {
         console.log("Hover running");
         console.log(e.target)
         // e.stopPropogation()
-        const img = e.target
-        if (img.alt===('linkedin')&&img.className===('')) {
-            img.className=('shadow hover')
-            img.src = `${linkedinH}`
-            // img.src = "{{img.alt}+H}"
-        }else if (img.alt===('linkedin')&&img.className===('shadow hover')){
-            // console.log(img.src)
-            img.className=('')
-            img.src = `${linkedin}`
-        }else if (img.alt===('github')&&img.className===('')) {
-            img.className=('shadow hover')
-            img.src = `${githubH}`
-            // img.src = "{{img.alt}+H}"
-        }else if (img.alt===('github')&&img.className===('shadow hover')){
-            // console.log(img.src)
-            img.className=('')
-            img.src = `${github}`
-        }else if (img.alt===('file')&&img.className===('')) {
-            img.className=('shadow hover')
-            img.src = `${fileH}`
-            // img.src = "{{img.alt}+H}"
-        }else if (img.alt===('file')&&img.className===('shadow hover')){
-            // console.log(img.src)
-            img.className=('')
-            img.src = `${file}`
+        const imgTag = e.target
+        const imgName = ["linkedin", "github", "file"]
+        const imgHover = [linkedinH, githubH, fileH]
+        const img = [linkedin, github, file]
+        for (let i=0; i<3; i++){
+            if (imgTag.alt===(imgName[i])&&imgTag.className===('')) {
+                imgTag.className=('shadow hover')
+                imgTag.src = `${imgHover[i]}`
+            }else if (imgTag.alt===(imgName[i])&&imgTag.className===('shadow hover')){
+                // console.log(imgTag.src)
+                imgTag.className=('')
+                imgTag.src = `${img[i]}`
+            }
         }
     }
     return (
