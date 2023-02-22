@@ -12,7 +12,7 @@ const Home = () => {
     const hover = (e) => {
         console.log("Hover running");
         console.log(e.target)
-        // e.stopPropogation()
+        e.stopPropogation()
         const img = e.target
         if (img.alt===('linkedin')&&img.className===('')) {
             img.className=('shadow hover')
