@@ -3,9 +3,9 @@ import WTP from './WTP'
 
 const Projects = () => {
     return (
-        <div class="section" id="projects">
+        <div className="section" id="projects">
                 <h2>Projects</h2>
-                <div class="content">
+                <div className="content">
                 <WTP/>
                 </div>
             </div>

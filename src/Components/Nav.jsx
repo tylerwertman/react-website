@@ -9,6 +9,7 @@ import aboutH from './images/About-LG.svg'
 import projectsH from './images/Projects-LG.svg'
 import educationH from './images/Education-LG.svg'
 import contactH from './images/Contact-LG.svg'
+import {Link} from 'react-router-dom'
 
 const nav = () => {
 
@@ -40,23 +41,16 @@ const nav = () => {
     <nav>
         <h1><a href="#home">Tyler Wertman Developments</a></h1>
             <div id="navLinksL">
-              {/* <img src="" alt="" /> */}
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#home"><img src={home} alt="home"/><span class="hidden">&nbsp;Home</span></a>&nbsp;
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#about"><img src={about} alt="about"/><span class="hidden">&nbsp;About</span></a>&nbsp;
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#projects"><img src={projects} alt="projects"/><span class="hidden">&nbsp;Projects</span></a>&nbsp;
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#education"><img src={education} alt="education"/><span class="hidden">&nbsp;Education</span></a>&nbsp;
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#contact"><img src={contact} alt="contact"/><span class="hidden">&nbsp;Contact</span></a>&nbsp;
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#null" class="icon"><i class="fa fa-bars"></i></a>
+              <img src="" alt="" />
+              <Link className="hover" onMouseOver={hover} onMouseLeave={hover} to={"/#home"}><img src={home} alt="home"/><span className="hidden">&nbsp;Home</span></Link>&nbsp;
+              <Link className="hover" onMouseEnter={hover} onMouseLeave={hover} to={"/#about"}><img src={about} alt="about"/><span className="hidden">&nbsp;About</span></Link>&nbsp;
+              <Link className="hover" onMouseOver={hover} onMouseOut={hover} to={"/#projects"}><img src={projects} alt="projects"/><span className="hidden">&nbsp;Projects</span></Link>&nbsp;
+              <Link className="hover" onMouseEnter={hover} onMouseOut={hover} to={"/#education"}><img src={education} alt="education"/><span className="hidden">&nbsp;Education</span></Link>&nbsp;
+              <Link className="hover" onMouseEnter={hover} onMouseOut={hover} to={"/#contact"}><img src={contact} alt="contact"/><span className="hidden">&nbsp;Contact</span></Link>&nbsp;
+              <Link className="icon hover" onMouseEnter={hover} onMouseOut={hover} to={"#null"}><i className="fa fa-bars"></i></Link>&nbsp;
             </div>
             <div id="navLinksS">
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#null" class="icon"><i class="fa fa-bars"></i></a>
-            </div>
-            <div id="navLinksSE" class="toggle">
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#home"><img src="./images/Home-DSG.svg" alt="home"/></a>
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#about"><img src="./images/About-DSG.svg" alt="about"/></a>
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#projects"><img src="./images/Projects-DSG.svg" alt="projects"/></a>
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#education"><img src="./images/Education-DSG.svg" alt="education"/></a>
-                <a className="hover" onMouseEnter={hover} onMouseOut={hover} href="#contact"><img src="./images/Contact-DSG.svg" alt="contact"/></a>
+              <Link className="icon hover" onMouseEnter={hover} onMouseOut={hover} to={"#null"}><i className="fa fa-bars"></i></Link>&nbsp;
             </div>
     </nav>
   )

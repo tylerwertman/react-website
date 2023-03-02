@@ -2,9 +2,9 @@ import React from 'react'
 
 const Education = () => {
     return (
-        <div class="section" id="education">
+        <div className="section" id="education">
             <h2>Education</h2>
-            <div class="content">
+            <div className="content">
                 <h4>CodingDojo Online - 2023</h4>
                 <ul>
                     <li>Web Fundamentals</li>

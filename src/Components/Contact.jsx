@@ -2,15 +2,15 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div class="section" id="contact">
+        <div className="section" id="contact">
             <h2>Contact</h2>
-            <div class="content" id="form"> 
+            <div className="content" id="form"> 
                 <form action="#">
                     <label for="fname">Name: </label>
                     <input type="text" id="fname" name="fname" size="20" required/>&nbsp;
                     {/* <label for="lname">Last name:</label> */}
                     {/* <input type="text" id="lname" name="lname" size="20"><br/><br/> */}
-                    <br class="hidden"/>
+                    <br className="hidden"/>
                     <label for="email">Email: </label>
                     <input type="text" id="email" name="email" size="20" required/><br/><br/>
                     <label for="message">&nbsp;&nbsp;Message:</label><br/><br/>
